@@ -54,6 +54,173 @@ public class Main {
         }
     }
     //Bagian Feri
+        public static void PaketPC() {
+        Scanner input = new Scanner(System.in);
+        int pilih = 0;
+        boolean n = true;
+        while(n == true) {
+            System.out.println("Silahkan pilih paket yang Anda inginkan!");
+            System.out.println("========================================");
+            System.out.println("1. Paket Basic");
+            System.out.println("2. Paket Medium");
+            System.out.println("3. Paket High");
+            System.out.println("4. Paket Advance");
+            System.out.println("5. Paket SULTAN");
+            System.out.println("6. EXIT");
+            System.out.print("Masukkan Pilihan : ");
+            pilih = input.nextInt();
+            String pilih2 = null;
+
+            //Pengkondisian
+            if (pilih == 1) {
+                System.out.println("Paket Basic");
+                System.out.println("Rp 5.500.000");
+                System.out.println("=======================");
+
+                System.out.println("+ Prosesor Intel Core i3");
+                System.out.println("+ RAM 8 GB");
+                System.out.println("+ VGA GTX 450");
+                System.out.println("+ Monitor Samsung");
+                System.out.println("+ Keyboard Logitech");
+                System.out.println("+ Power Supply Corsair");
+                System.out.println("+ Penyimpanan SSD 256 GB NvME");
+                System.out.println("+ Mouse Aukey");
+                System.out.println("+ Speaker Logitech");
+                System.out.println("+ Headset Corsair");
+                while (true) {
+                    System.out.println("Apakah Anda ingin membeli paket ini? (Yes/No)");
+                    pilih2 = input.next();
+                    if (pilih2.toLowerCase().equals("yes")) {
+                        System.out.println("Anda telah membeli paket ini \n" +
+                                "Terima kasih telah berbelanja");
+                        n = false;
+                        break;
+                    } else if (pilih2.toLowerCase().equals("no")) {
+                        break;
+                    } else {
+                        System.out.println("Masukan tidak valid");
+                    }
+                }
+            } else if (pilih == 2) {
+                System.out.println("Paket Medium");
+                System.out.println("Rp 8.750.000");
+                System.out.println("=======================");
+
+                System.out.println("+ Prosesor AMD Ryzen 5");
+                System.out.println("+ RAM 16 GB");
+                System.out.println("+ VGA GTX 750");
+                System.out.println("+ Monitor Asus");
+                System.out.println("+ Keyboard Fantech");
+                System.out.println("+ Power Supply Armaggeddon");
+                System.out.println("+ Penyimpanan SSD 512 GB NvME");
+                System.out.println("+ Mouse Rexus");
+                System.out.println("+ Speaker Logitech");
+                while (true) {
+                    System.out.println("Apakah Anda ingin membeli paket ini? (Yes/No)");
+                    pilih2 = input.next();
+                    if (pilih2.toLowerCase().equals("yes")) {
+                        System.out.println("Anda telah membeli paket ini \n" +
+                                "Terima kasih telah berbelanja");
+                        n = false;
+                        break;
+                    } else if (pilih2.toLowerCase().equals("no")) {
+                        break;
+                    } else {
+                        System.out.println("Masukan tidak valid");
+                    }
+                }
+            } else if (pilih == 3) {
+                System.out.println("Paket High");
+                System.out.println("Rp 10.800.000");
+                System.out.println("=======================");
+
+                System.out.println("+ Prosesor Intel Core i5");
+                System.out.println("+ RAM 24 GB");
+                System.out.println("+ VGA GTX 1650");
+                System.out.println("+ Monitor Asus");
+                System.out.println("+ Keyboard Logitech");
+                System.out.println("+ Power Supply Armaggeddon Optimus");
+                System.out.println("+ Penyimpanan SSD 1 TB NvME");
+                System.out.println("+ Mouse Razer");
+                System.out.println("+ Speaker Logitech");
+                while (true) {
+                    System.out.println("Apakah Anda ingin membeli paket ini? (Yes/No)");
+                    pilih2 = input.next();
+                    if (pilih2.toLowerCase().equals("yes")) {
+                        System.out.println("Anda telah membeli paket ini \n" +
+                                "Terima kasih telah berbelanja");
+                        n = false;
+                        break;
+                    } else if (pilih2.toLowerCase().equals("no")) {
+                        break;
+                    } else {
+                        System.out.println("Masukan tidak valid");
+                    }
+                }
+            } else if (pilih == 4) {
+                System.out.println("Paket Advance");
+                System.out.println("Rp 15.450.000");
+                System.out.println("=======================");
+
+                System.out.println("+ Prosesor AMD Ryzen 7");
+                System.out.println("+ RAM 32 GB");
+                System.out.println("+ Monitor Samsung+");
+                System.out.println("+ Keyboard Razer");
+                System.out.println("+ Power Supply Corsair Maximus");
+                System.out.println("+ Penyimpanan SSD 1 TB NvME");
+                System.out.println("+ Mouse Joyseus");
+                System.out.println("+ Speaker Razer");
+                while (true) {
+                    System.out.println("Apakah Anda ingin membeli paket ini? (Yes/No)");
+                    pilih2 = input.next();
+                    if (pilih2.toLowerCase().equals("yes")) {
+                        System.out.println("Anda telah membeli paket ini \n" +
+                                "Terima kasih telah berbelanja");
+                        n = false;
+                        break;
+                    } else if (pilih2.toLowerCase().equals("no")) {
+                        break;
+                    } else {
+                        System.out.println("Masukkan tidak valid");
+                    }
+                }
+            } else if (pilih == 5) {
+                System.out.println("Paket SULTAN");
+                System.out.println("Rp 25.999.000");
+                System.out.println("=======================");
+
+                System.out.println("+ Prosesor Intel Core i9");
+                System.out.println("+ RAM 64 GB");
+                System.out.println("+ Monitor Samsung oled");
+                System.out.println("+ Keyboard Fantech Domination");
+                System.out.println("+ Power Supply Corsair Extreme");
+                System.out.println("+ Penyimpanan SSD 2 TB NvME");
+                System.out.println("+ Mouse Razer Special Edition");
+                System.out.println("+ Speaker Logitech Power UP");
+                while (true) {
+                    System.out.println("Apakah Anda ingin membeli paket ini? (Yes/No)");
+                    pilih2 = input.next();
+                    if (pilih2.toLowerCase().equals("yes")) {
+                        System.out.println("Anda telah membeli paket ini \n" +
+                                "Terima kasih telah berbelanja");
+                        n = false;
+                        break;
+                    } else if (pilih2.toLowerCase().equals("no")) {
+                        break;
+                    } else {
+                        System.out.println("Masukan tidak valid");
+                    }
+                }
+            }
+            else if (pilih == 6) {
+                n = false;
+                break;
+            }
+            else
+                System.out.println("Maaf pilihan anda tidak valid");
+        }
+    }
+
 
     //Bagian Ryan
     public void Total(String[] barang) {
