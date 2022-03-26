@@ -10,7 +10,49 @@ public class Main {
         while (true) {
             String pilih = null;
             //Bagian Vincent (Buat Tampilan utama dan exit)
+            System.out.println("*** WELCOME TO PC EPIC STORE ***");
+            System.out.println("===============================");
+            System.out.println("-----------MENU UTAMA----------");
+            System.out.println("===============================");
+            System.out.println("1. Paket");
+            System.out.println("2. Komponen");
+            System.out.println("3. Exit");
+            System.out.print("Masukkan Pilihan : ");
+            int menu = scan.nextInt();
+            pilihan(menu);
 
+            System.out.println("Apakah ingin melanjutkan belanja anda? (Yes/No)");
+            pilih = scan.nextLine();
+            pilih = scan.nextLine();
+            if (pilih.toLowerCase().equals("yes")){
+                continue;
+            }
+            else if (pilih.toLowerCase().equals("no")){
+                System.out.println("Terimakasih telah berbelanja di PC EPIC STORE");
+                break;
+            }
+
+        }
+    }
+
+    public static void pilihan(int pilih){
+        while (true) {
+            int menu = pilih;
+            if (menu == 1) {
+                PaketPC();
+                break;
+            } else if (menu == 2) {
+                Method1 object = new Method1();
+                object.main();
+                break;
+            } else if (menu == 3) {
+                System.out.println("Terimakasih telah berkunjung ke toko kami :)");
+                System.exit(0);
+            } else {
+                System.out.println("Maaf menu yang anda pilih tidak valid :(");
+            }
+        }
+    }
     //Bagian Feri
 
     //Bagian Ryan
